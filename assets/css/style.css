@@ -189,3 +189,49 @@ footer a {
     padding: 3rem 1rem;
   }
 }
+
+/* -------------------------------
+   アニメーション表示
+-------------------------------- */
+section, .item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+
+section.show, .item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* モバイルメニュー用 */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  header nav {
+    display: none;
+    flex-direction: column;
+    background-color: var(--color-green);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  header nav.open {
+    display: flex;
+  }
+}
