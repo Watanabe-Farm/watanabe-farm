@@ -1,0 +1,191 @@
+/* ===============================
+   渡辺農園 LP スタイルシート
+   ファイル名：assets/css/style.css
+   =============================== */
+
+/* -------------------------------
+   基本設定
+-------------------------------- */
+:root {
+  /* カラーパレット */
+  --color-green: #6b8e23;   /* メイン（自然の緑） */
+  --color-pink: #f6b7c1;    /* 春：さくら色 */
+  --color-sky: #9fd3f8;     /* 夏：空色 */
+  --color-gold: #eacb65;    /* 秋：稲穂色 */
+  --color-snow: #f8f9fa;    /* 冬：雪色 */
+  --color-text: #333;
+  --color-bg: #fff;
+
+  --font-main: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+/* 全体のリセットと基本レイアウト */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+}
+
+/* -------------------------------
+   ヘッダー
+-------------------------------- */
+header {
+  background-color: var(--color-green);
+  color: white;
+  padding: 1.2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+header .logo img {
+  height: 40px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+header nav a:hover {
+  opacity: 0.8;
+}
+
+/* -------------------------------
+   ヒーローセクション
+-------------------------------- */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background: url("../images/top-hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+}
+
+/* -------------------------------
+   セクション共通
+-------------------------------- */
+section {
+  padding: 4rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: var(--color-green);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+}
+
+section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--color-green);
+  margin: 0.5rem auto 0;
+  border-radius: 3px;
+}
+
+/* -------------------------------
+   作物紹介
+-------------------------------- */
+.crops {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.crops .item {
+  background: var(--color-snow);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.crops .item:hover {
+  transform: translateY(-4px);
+}
+
+.crops img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.crops h3 {
+  margin: 1rem 0 0.5rem;
+  color: var(--color-green);
+  font-size: 1.2rem;
+}
+
+.crops p {
+  padding: 0 1rem 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* -------------------------------
+   フッター
+-------------------------------- */
+footer {
+  background-color: var(--color-green);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* -------------------------------
+   レスポンシブ対応
+-------------------------------- */
+@media (max-width: 768px) {
+  header nav {
+    display: none; /* 後でJSでメニューを開閉してもOK */
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  section {
+    padding: 3rem 1rem;
+  }
+}
