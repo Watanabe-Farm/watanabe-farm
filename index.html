@@ -3,89 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>渡辺農園｜自然とともに育つおいしい恵み</title>
-  <meta name="description" content="山形県の渡辺農園は、自然の恵みを大切にお米・さくらんぼ・ラ・フランス・和梨・干し柿を育てています。">
+  <title>渡辺農園｜自然とともに育つ、やさしい味わい</title>
+  <meta name="description" content="山形の自然に囲まれた渡辺農園。四季を感じる米・さくらんぼ・ラフランス・和梨・干し柿を丹精込めて育てています。">
+  
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" href="assets/images/favicon.png">
+  
+  <!-- Favicon（任意） -->
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
 </head>
-<body>
 
-  <!-- ヘッダー -->
-  <header class="header">
-    <div class="container">
-      <img src="assets/images/logo.png" alt="渡辺農園ロゴ" class="logo">
-      <nav class="nav">
-        <ul>
-          <li><a href="#about">農園について</a></li>
-          <li><a href="#crops">作物紹介</a></li>
-          <li><a href="#contact">お問い合わせ</a></li>
-        </ul>
-      </nav>
+<body>
+  <!-- ===============================
+       Header
+  =============================== -->
+  <header>
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="渡辺農園ロゴ">
+      <h1>渡辺農園</h1>
     </div>
+    <nav>
+      <a href="#about">農園について</a>
+      <a href="#crops">作物紹介</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
   </header>
 
-  <!-- メインビジュアル -->
+  <!-- ===============================
+       Hero Section
+  =============================== -->
   <section class="hero">
-    <div class="hero-text">
-      <h1>自然とともに育つ<br>渡辺農園の恵み</h1>
-      <p>四季の移ろいを感じながら、心を込めて作っています。</p>
-      <a href="#crops" class="btn">作物をみる</a>
-    </div>
+    <h1>自然とともに育つ、<br>やさしい味わい。</h1>
   </section>
 
-  <!-- 農園について -->
-  <section id="about" class="about section">
-    <div class="container">
-      <h2>渡辺農園について</h2>
-      <p>
-        山形県の豊かな自然に囲まれた渡辺農園では、
-        土づくりから収穫まで丁寧に行い、
-        安心・安全でおいしい作物を育てています。
-      </p>
-      <img src="assets/images/farm-view.jpg" alt="渡辺農園の風景">
-    </div>
+  <!-- ===============================
+       About Section
+  =============================== -->
+  <section id="about">
+    <h2>渡辺農園について</h2>
+    <p>
+      山形の豊かな自然に囲まれた「渡辺農園」では、四季の移ろいを感じながら、
+      土と対話し、作物と向き合う農業を続けています。<br>
+      「安心・安全でおいしい」を大切に、家族みんなで丁寧に育てています。
+    </p>
+    <img src="assets/images/farm-view.jpg" alt="農園の風景" style="width:100%; border-radius:10px; margin-top:2rem;">
   </section>
 
-  <!-- 作物紹介 -->
-  <section id="crops" class="crops section">
-    <div class="container">
-      <h2>作物紹介</h2>
-      <div class="crop-list">
-        <div class="crop-item">
-          <img src="assets/images/rice.jpg" alt="お米">
-          <h3>お米</h3>
-          <p>山形の清らかな水で育った、ふっくら甘みのあるお米。</p>
-        </div>
-        <div class="crop-item">
-          <img src="assets/images/cherry.jpg" alt="さくらんぼ">
-          <h3>さくらんぼ</h3>
-          <p>初夏の宝石。甘みと酸味のバランスが絶妙です。</p>
-        </div>
-        <div class="crop-item">
-          <img src="assets/images/lafrance.jpg" alt="ラ・フランス">
-          <h3>ラ・フランス</h3>
-          <p>芳醇な香りととろけるような食感が自慢です。</p>
-        </div>
+  <!-- ===============================
+       Crops Section
+  =============================== -->
+  <section id="crops">
+    <h2>作物紹介</h2>
+    <div class="crops">
+      <div class="item">
+        <img src="assets/images/rice.jpg" alt="お米">
+        <h3>お米</h3>
+        <p>清らかな水と寒暖差のある気候で育った、ふっくら甘い自慢のお米です。</p>
+      </div>
+      <div class="item">
+        <img src="assets/images/cherry.jpg" alt="さくらんぼ">
+        <h3>さくらんぼ</h3>
+        <p>山形の初夏を彩る宝石のような果実。旬の味をそのままお届けします。</p>
+      </div>
+      <div class="item">
+        <img src="assets/images/farm-view.jpg" alt="ラ・フランス">
+        <h3>ラ・フランス</h3>
+        <p>とろけるような果肉と香りが特徴のラ・フランス。冬の贈り物にも人気です。</p>
       </div>
     </div>
   </section>
 
-  <!-- お問い合わせ -->
-  <section id="contact" class="contact section">
-    <div class="container">
-      <h2>お問い合わせ</h2>
-      <p>収穫時期のご予約や直送のご相談は、お気軽にどうぞ。</p>
-      <a href="mailto:info@watanabe-farm.jp" class="btn">メールで問い合わせる</a>
+  <!-- ===============================
+       Contact Section
+  =============================== -->
+  <section id="contact">
+    <h2>お問い合わせ</h2>
+    <p>
+      ご注文や取材のご依頼は、以下のフォームまたはSNSからお気軽にご連絡ください。
+    </p>
+    <div style="text-align:center; margin-top:1.5rem;">
+      <a href="mailto:info@watanabe-farm.jp" style="color:var(--color-green); font-weight:bold;">
+        ✉️ info@watanabe-farm.jp
+      </a>
     </div>
   </section>
 
-  <!-- フッター -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 渡辺農園 All rights reserved.</p>
-    </div>
+  <!-- ===============================
+       Footer
+  =============================== -->
+  <footer>
+    <p>© 2025 渡辺農園 - Watanabe Farm</p>
+    <p><a href="#">プライバシーポリシー</a></p>
   </footer>
 
+  <!-- JS（任意：メニュー開閉やアニメーション） -->
   <script src="assets/js/main.js"></script>
 </body>
 </html>
