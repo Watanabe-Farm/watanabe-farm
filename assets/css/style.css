@@ -193,6 +193,7 @@ footer a {
 /* -------------------------------
    アニメーション表示
 -------------------------------- */
+/*
 section, .item {
   opacity: 0;
   transform: translateY(20px);
@@ -203,6 +204,7 @@ section.show, .item.show {
   opacity: 1;
   transform: translateY(0);
 }
+*/
 
 /* モバイルメニュー用 */
 .menu-toggle {
