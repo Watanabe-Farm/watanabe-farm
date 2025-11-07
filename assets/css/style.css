@@ -74,7 +74,7 @@ header nav a:hover {
 .hero {
   position: relative;
   width: 100%;
-  height: 70vh;
+  margin-bottom: 2rem;
   background: url("../images/top-hero.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
