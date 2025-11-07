@@ -1,4 +1,4 @@
-# watanabe-farm-demo
+# watanabe-farm
 
 ## structure
 
