@@ -3,7 +3,7 @@
 ## structure
 
 ```text
-watanabe-farm-lp/
+watanabe-farm/
 ├─ index.html              ← トップページ（LP本体）  
 ├─ about.html              ← 農園紹介ページ（任意）  
 ├─ crops.html              ← 作物紹介ページ（任意）  
