@@ -16,7 +16,7 @@
   --color-text: #333;
   --color-bg: #fff;
 
-  --font-main: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+  --font-main: "Noto Sans JP", sans-serif, "Yu Gothic", "Hiragino Kaku Gothic ProN";
 }
 
 /* 全体のリセットと基本レイアウト */
@@ -80,7 +80,7 @@ header nav a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: black;
+  color: white;
   text-align: center;
 }
 
