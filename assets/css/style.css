@@ -126,6 +126,7 @@ section h2::after {
 .farm-view {
   position: relative;
   width: 100%;
+  height: 2400px;
 }
 
 .farm-view ul {
