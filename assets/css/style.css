@@ -123,6 +123,10 @@ section h2::after {
 /* -------------------------------
    農園紹介
 -------------------------------- */
+.farm-view {
+  position: relative;
+  width: 100%;
+}
 
 .farm-view ul {
     display: flex;
