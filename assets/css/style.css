@@ -128,7 +128,7 @@ section h2::after {
 }
 
 .farm-view img{
-   width: 30%; /* 画像が２つ並ぶように設定 */
+   width: 30%;
    height: auto;
 }
 
