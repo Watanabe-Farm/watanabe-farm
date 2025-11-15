@@ -124,22 +124,12 @@ section h2::after {
    農園紹介
 -------------------------------- */
 .farm-view {
-  position: relative;
-  width: 100%;
-  height: 240px;
+  display: flex;
 }
 
-.farm-view ul {
-    display: flex;
-    justify-content: center;
-}
-
-.farm-view li {
-    list-style: none;
-}
-
-.farm-view li:nth-child(2) {
-    margin: 0 10px;
+.farm-view img{
+   width: 30%; /* 画像が２つ並ぶように設定 */
+   height: auto;
 }
 
 /* -------------------------------
