@@ -123,8 +123,7 @@ section h2::after {
    農園紹介
 -------------------------------- */
 
-about p {
-  padding: 0 1rem 1.5rem;
+.about p {
   font-size: 0.95rem;
   text-align: center;
 }
