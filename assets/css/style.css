@@ -127,6 +127,7 @@ section h2::after {
    display: flex;
    justify-content:center
    gap: 2rem;
+   border-radius: 5px;
 }
 
 .farm-view img{
