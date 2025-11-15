@@ -124,16 +124,16 @@ section h2::after {
    農園紹介
 -------------------------------- */
 
-ul {
+.farm-view ul {
     display: flex;
     justify-content: center;
   }
 
-  li {
+.farm-view li {
     list-style: none;
   }
 
-  li:nth-child(2) {
+.farm-view li:nth-child(2) {
     margin: 0 10px;
 
 /* -------------------------------
